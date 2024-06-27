@@ -15,11 +15,9 @@ export default async function handler(req, res) {
     "Orange",
     "Violet",
   ];
-
   function randomNumber(n) {
     return Math.floor(Math.random() * n);
   }
-
   const getRandomNumber = randomNumber(colors.length);
   const colorName = colors[getRandomNumber];
 
@@ -38,7 +36,6 @@ export default async function handler(req, res) {
         selectedColors.push(user[randomColorIndex]);
       }
     }
-
     res.status(200).json(selectedColors);
   } catch (error) {
     console.error("Erreur d'accès à la base de données.", error);
