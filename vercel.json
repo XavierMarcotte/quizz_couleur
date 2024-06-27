@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_PRISMA_GENERATE": "true"
+    }
+  },
+  "functions": {
+    "api/**/*": {
+      "runtime": "nodejs16.x",
+      "includeFiles": "node_modules/.prisma/client"
+    }
+  }
+}
