@@ -11,7 +11,7 @@ export default function Name() {
 
   async function fetchColors() {
     try {
-      const response = await axios.get("/api/find");
+      const response = await axios.get("/api/color");
       setSelectedColors(response.data);
     } catch (error) {
       console.error("Erreur pour charger les couleurs:", error);

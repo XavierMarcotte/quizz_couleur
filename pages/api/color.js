@@ -37,6 +37,7 @@ export default async function handler(req, res) {
       }
     }
     res.status(200).json(selectedColors);
+    console.log("Envoie ressi depuis la bdd");
   } catch (error) {
     console.error("Erreur d'accès à la base de données.", error);
     res.status(500).json({
