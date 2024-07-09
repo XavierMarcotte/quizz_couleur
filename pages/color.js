@@ -48,7 +48,7 @@ export default function Name() {
   return (
     <>
       <Header />
-      <section className="flex m-auto w-1/2 flex-col">
+      <section className="flex m-auto w-1/2 flex-col max-md:w-2/3">
         <div className="m-auto">
           <p>Quelle est la couleur associée à ce nom:</p>
           {randomColorName && (
